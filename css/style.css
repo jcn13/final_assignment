@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Basic');
+body{
+  margin: 0 auto;
+  padding: 0;
+  background: white;
+  font-family: 'Basic', sans-serif;
+  max-width: 1200px;
+}
+header{
+  background-image: url(../images/beerbox.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Monoton', serif;
+  font-size: 1.5rem;
+  padding: 1rem;    
+  margin: 0 auto;
+  border-bottom: solid 6px darkorange;
+}
+footer{  
+  background-image: url(../images/beerbox.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Monoton', serif;
+  font-size: 2rem;
+  padding: 1rem;    
+  margin: 0 auto;
+  border-top: solid 6px darkorange;
+}
+header h1{
+  text-align: center;
+  margin: 0;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.icon{
+  width: 30%;
+  height: auto;
+  margin: 0 35%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 1.5%;
+  margin: 1.5%;
+  justify-content: center;
+  background-color: darkgray;
+}
+input, select, textarea{
+  float: right;
+  margin-right: 12%; 
+  box-sizing: border-box;  
+}
+select{
+  padding:2px;
+}
+.box{
+  width: 35%;
+}
+h2{
+  text-align: center;  
+}
+form{
+  width: 100%;
+}
+b{
+  width: 35%;
+  margin-left: 12%;
+  box-sizing: border-box;
+  float: left;
+  /*margin-left: 25%;*/
+}
+p{
+  width: 100%;    
+}
+button{
+  margin: 3% 37.5%;
+  width: 25%;  
+}
+button.edit, button.delete{
+  margin: 3% 2.5%;
+  width: 95%;  
+}
+.display{
+  margin: 1rem;
+  padding: .5rem;
+  background: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  width: 20%;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.displayNone{
+  display: none;  
+}
+.visually-hidden { /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 601px) {
+  body{
+    font-size: .8rem;
+    background: darkgray;
+  }
+  h1{
+    font-size: 1.2rem;
+  }
+  h2{
+    display: none;
+  }
+  input, textarea, select{
+    font-size: .675rem;
+    box-sizing: border-box;
+  }
+  .container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    margin: 0;
+  }
+}

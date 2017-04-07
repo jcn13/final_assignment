@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/f0e20a6c70.js"></script>
+  <script src="https://cdn.jsdelivr.net/pouchdb/6.1.2/pouchdb.min.js"></script>
+  <title>Ipa Lovers</title>
+</head>
+<body>
+  <header>
+    <h1 class="visually-hidden">IPA LOVERS</h1>
+    <img class="icon" src="images/icon-ipa.svg" alt="icon">
+  </header>
+  <section class="main">
+  <div class="container">
+    <div class="inner">
+    <h2>Beer Library</h2>
+      <form id="add">
+        <p><b>Beer name: </b><input id="beer" type="text" placeholder="Beer name" class="box"></p>
+        <p><b>Brewery name: </b><input id="brewery" type="text" placeholder="Brewery name" class="box"></p>
+        <p><b>Style: </b><input id="type" type="text" placeholder="Style" class="box"></p>
+        <p><b>Rating: </b><select id="rating" class="box"><option>Choose Rating</option><option value="1 Star">1 Star</option><option value="2 Star">2 Star</option><option value="3 Star">3 Star</option><option value="4 Star">4 Star</option><option value="5 Star">5 Star</option></select></p>
+        <p><b>Notes: </b><textarea id="notes" type="text" placeholder="Notes" class="box"></textarea></p>
+        <button id="insert">insert rating</button>        
+      </form>
+      <form id="change">
+        <button id="update" class="displayNone">update</button>
+      </form>
+      <div id="history"></div>
+    </div>
+  </div>
+  </section>  
+  <script src="app.js"></script>
+</body>
+</html>
